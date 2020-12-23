@@ -7,12 +7,15 @@ namespace cs_aoc
     {
         static void Main(string[] args)
         {
-        	const string puzzleInputPath = "./TwentyTwentySolutions/input/day1.txt";
-
-            DayOne d1 = new DayOne();
+        	DayOne d1 = new DayOne();
             Console.WriteLine("----- Day 1 -----");
-            Console.WriteLine(d1.PartA(puzzleInputPath));
-            Console.WriteLine(d1.PartB(puzzleInputPath));
+            Console.WriteLine(d1.PartA("./TwentyTwentySolutions/input/day1.txt"));
+            Console.WriteLine(d1.PartB("./TwentyTwentySolutions/input/day1.txt"));
+
+            DayTwo d2 = new DayTwo();
+            Console.WriteLine("----- Day 2 -----");
+            Console.WriteLine(d2.PartA("./TwentyTwentySolutions/input/day2.txt"));
+            Console.WriteLine(d2.PartB("./TwentyTwentySolutions/input/day2.txt"));
         }
     }
 }
