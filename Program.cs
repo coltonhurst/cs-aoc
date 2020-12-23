@@ -1,4 +1,5 @@
 ﻿using System;
+using TwentyTwentySolutions;
 
 namespace cs_aoc
 {
@@ -6,7 +7,12 @@ namespace cs_aoc
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        	const string puzzleInputPath = "./TwentyTwentySolutions/input/day1.txt";
+
+            DayOne d1 = new DayOne();
+            Console.WriteLine("----- Day 1 -----");
+            Console.WriteLine(d1.PartA(puzzleInputPath));
+            Console.WriteLine(d1.PartB(puzzleInputPath));
         }
     }
 }
